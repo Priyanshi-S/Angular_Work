@@ -1,0 +1,29 @@
+<div class="row g-3">
+    <div class="col">
+        Enter First Number
+      <input type="text" class="form-control" placeholder="First Number" aria-label="First name" id="n1"  #x/> 
+    </div>
+
+    <div class="col">
+        Enter Second Number
+      <input type="text" class="form-control" placeholder="Second Number" aria-label="Last name" id="n2"  #y/>
+    </div>
+    
+  </div>
+  <input type="button" (click)="doThis(x.value, y.value)" value="Do Action"/>
+  <hr>RESULT OF ADDITION:
+  {{result}}
+
+<hr>
+  <div class="row g-3">
+    <div class="col">
+        Enter Number
+      <input type="text" class="form-control" placeholder="Number" aria-label="num" id="n3"  #z/> 
+    </div>
+    
+  </div>
+  <input type="button" (click)="doThis1(z.value)" value="Do Action"/>
+  <hr>RESULT OF SECOND:
+  {{A}}
+
+

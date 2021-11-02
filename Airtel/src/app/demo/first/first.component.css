@@ -1,0 +1,9 @@
+.decoration{
+    text-align: center;
+}
+.carousel-control-prev{
+    left: 6%;
+}
+.carousel-control-next{
+    right: 6%;
+}

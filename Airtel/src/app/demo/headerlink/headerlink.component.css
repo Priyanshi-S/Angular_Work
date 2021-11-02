@@ -1,0 +1,29 @@
+.decoration{
+    background-color:  #a80000;
+    
+}
+.decoration1{
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    height: 90px;
+    border-radius: 12px;
+    margin: auto;
+    /* text-indent: 35px; */
+}
+
+.icon{
+    color: black;
+    font-size: 1.5rem;
+}
+.decoration2{
+    margin: 0px 20px 0px 20px;
+}
+.linktext{
+    color: black;
+}
+
+.link:hover{
+      text-decoration: 8px solid underline;
+      text-decoration-color: green;
+    }

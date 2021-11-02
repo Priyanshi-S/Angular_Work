@@ -1,0 +1,81 @@
+<div style="text-align: center; ">
+  <form (ngSubmit) = "onClickSubmit()">
+    <div class="box">
+      <form name="search">
+        <input class="form-control search-box" type="search" name="searchText" autocomplete="off" [(ngModel)]="searchText"  placeholder="  search places">
+      </form>
+          <i class="fas fa-search"></i>
+  </div>
+<div>
+  <br><br>  
+</div>
+  <div class="form-group decoration">
+    <h1> <u></u> </h1>
+    <table class="table   table-striped">
+      <thead class="table-dark">
+    <tr>
+        <th colspan="2">ID</th>
+        <th>Picture</th>
+        <th>Place </th>
+        <th>Package Name</th>
+        <th>Number Of Days</th>
+        <th>Cost</th>
+        <th>Discount</th>
+    </tr>  
+    </thead> 
+    <tr *ngFor='let p of places | filter : searchText'>
+        <td><input class="form-check-input" type="checkbox" [checked]="p.select" [value]='p.id' (change)="compare($event)"></td>
+        <td>{{p.id}}</td>
+        <td><img src={{p.image}} style="width: 200px; height: 150px;" alt="Not Able To Load"></td>
+        <td>{{p.place}}</td>
+        <td>{{p.packagename}}</td>
+        <td>{{p.noofdays}}</td>
+        <td>{{p.cost}}</td>
+        <td>{{p.discount}}</td>
+    </tr>
+    </table>
+  </div>
+  <div class="button1" ><input type = "submit" class="button1" ></div>
+  </form> 
+  <br>
+  <br>
+  <table class="table table-borderless decoration1">
+    
+    <tr> 
+      
+      <td *ngFor='let cp of comparedPlaces' class="decoration2" >
+        {{cp.id}}
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor='let cp of comparedPlaces' class="decoration2">
+        <img src={{cp.image}} style="width: 200px; height: 150px;" alt="Not Able To Load">
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor='let cp of comparedPlaces' class="decoration2">
+        {{cp.place}}
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor='let cp of comparedPlaces' class="decoration2">
+        {{cp.packagename}}
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor='let cp of comparedPlaces' class="decoration2">
+        {{cp.noofdays}}
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor='let cp of comparedPlaces' class="decoration2">
+        {{cp.cost}}
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor='let cp of comparedPlaces' class="decoration2">
+        {{cp.discount}}
+      </td>
+    </tr> 
+  </table>
+</div>

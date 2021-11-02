@@ -1,0 +1,28 @@
+.decoration{
+    background-color:  #a80000;
+    
+}
+.decoration1{
+    background-color: white;
+    width: 90%;
+    height: 170px;
+    border-radius: 12px;
+    margin: auto;
+}
+
+.icon{
+    color: black;
+    font-size: 1.9rem;
+}
+.decoration2{
+    margin: 0px 50px 0px 50px;
+}
+.linktext{
+    color: black;
+}
+.decoration3{
+    font-size: 23px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}    
